@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Records</title>
+</head>
+<body>
+    <h1>OPAC Library Administration</h1>
+
+    <p>This is the library administration page for entering records into the OPAC.</p>
+    <p>Please do not use this page unless you are an authorized cataloger.</p>
+
+    <form action="insert.php" method="post">
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" required><br><br>
+
+        <label for="title">Book Title:</label>
+        <input type="text" name="title" id="title" required><br><br>
+
+        <label for="publisher">Publisher:</label>
+        <input type="text" name="publisher" id="publisher" required><br><br>
+
+        <label for="copyright">Copyright:</label>
+        <input type="number" name="copyright" id="copyright" min="1000" max="2300" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
